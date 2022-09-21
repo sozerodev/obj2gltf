@@ -1,0 +1,20 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "obj2gltf converting",
+            "program": "${workspaceFolder}\\bin\\customObj2gltf.js",
+            "args": [
+                "convert",
+                "--i='F:/obj/jangsung/장성군obj_최종_0905'", 
+                "--o='F:/obj/jangsung/output'",
+                "--e='epsg:5186'"
+            ]
+        }
+    ]
+}

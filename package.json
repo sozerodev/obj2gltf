@@ -1,0 +1,25 @@
+{
+  "name": "customobj2gltf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "customObjTo2Gltf.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "bin": {
+    "objto3dtiles": "bin/customobj2gltf.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SOYOUNGKIM",
+  "license": "ISC",
+  "dependencies": {
+    "graceful-fs": "^4.2.10",
+    "iconv-lite": "^0.6.3",
+    "jschardet": "^3.0.0",
+    "obj2gltf": "^3.1.4",
+    "path": "^0.12.7",
+    "yargs": "^17.5.1"
+  }
+}
