@@ -186,7 +186,7 @@ def transform_world_to_local(
         reading_obj = original_obj.readlines()
         for line in reading_obj:
             if line.startswith("v "):
-                # 한맥데이터는 v 뒤에 공백이 두개인 경우가 있어서
+                # v 뒤에 공백이 두개인 경우가 있어서
                 # split(" ")시 빈 데이터는 삭제한다.
                 line_list = list(filter(None, line.split(" ")))
                 x_coordinate = line_list[1]
@@ -299,7 +299,7 @@ def handle_local_obj(
         reading_obj = original_obj.readlines()
         for line in reading_obj:
             if line.startswith("v "):
-                # 한맥데이터는 v 뒤에 공백이 두개인 경우가 있어서 
+                # v 뒤에 공백이 두개인 경우가 있어서 
                 # split(" ")시 빈 데이터는 삭제한다.
                 line_list = list(filter(None, line.split(" ")))
                 x_coordinate = line_list[1]
