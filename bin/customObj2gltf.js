@@ -28,17 +28,24 @@
        describe: 'EPSG Code of target files',
        type: 'string',
        normalize: true
+     },
+     rotation: {
+       alias: 'r',
+       describe: 'Roatation value of obj',
+       type: 'list',
+       normalize: true
      }
    },
    handler: (argv) => {
      console.log('input:', argv.input);
      console.log('output:', argv.output);
      console.log('epsg:', argv.epsg);
+     console.log('rotation:', argv.rotation);
      let out = argv.output;
      if (!out) {
        out = path.normalize(`${argv.input + path.sep}output`);
      }
      
-     customObjTo2Gltf(argv.input, out, argv.epsg);
+     customObjTo2Gltf(argv.input, out, argv.epsg, argv.rotation);
    }
  }).help().argv;

@@ -13,7 +13,8 @@
                 "convert",
                 "--i='F:/obj/jangsung/장성군obj_최종_0905'", 
                 "--o='F:/obj/jangsung/output'",
-                "--e='epsg:5186'"
+                "--e='epsg:5186'",
+                "--r='[0,0,0]'"
             ]
         }
     ]

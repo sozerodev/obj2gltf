@@ -5,7 +5,7 @@ import shutil
 from coordinate_transform import transform_world_to_local
 
 
-def localize_world_obj(input_dir, output_dir, epsg="epsg:5186"):
+def localize_world_obj(input_dir, output_dir, epsg="epsg:5186", rotation=[0,0,0]):
     """
     월드 좌표계의 obj파일을 로컬 좌표계로 변환시키는 함수
     input_dir 경로 안의 모든 월드 좌표 obj의 파일들을 읽어 로컬 모델로 변환시킨다.
@@ -63,7 +63,7 @@ def localize_world_obj(input_dir, output_dir, epsg="epsg:5186"):
                 # 
                 center_result[file.split('.obj')[0]] = {
                         "position": list(center_point),
-                        "roation": [0, 0, 0] # default
+                        "roation": rotation # default
                 }
 
                 

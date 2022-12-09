@@ -9,17 +9,28 @@ if __name__ == "__main__":
     # input_dir = "F:/obj/jangsung/test/input"
     # output_dir = "F:/obj/jangsung/test/output"
     # epsg = "epsg:5186"
+    # rotation = [0,0,0]
     
     input_dir = sys.argv[1]
     output_dir = sys.argv[2]
     epsg = sys.argv[3]
+    rotation = sys.argv[4]
 
     # removeIndent먼저
     trimmed_path = removeIndent(input_dir, output_dir)
 
     # 로컬로 당기기
-    localized_path = localize_world_obj(trimmed_path, output_dir, epsg)
+    localized_path = localize_world_obj(trimmed_path, output_dir, epsg, rotation)
     
+
+    # 회전 적용
+    # if (rotation):
+    #     for (root, directories, files) in os.walk(input_dir):
+    #         for file in files:
+    #             if file.endswith('.obj'):
+    #                rotate_obj(root, file, rotation)
+
+
     # 경위도고도 좌표 남기기
     position_json_path = os.path.join(localized_path, "position.json") # 경위도고도값 정보 담긴 json파일
     
