@@ -11,7 +11,8 @@
 ## how to use
 You must prepare python environment, and then run node.
 ### python
-- python version >= 3.8
+- Python >=3.7, <3.8
+    - Due to using of bpy 2.82.1
 ```
 pip install -r requirements.txt
 ```
@@ -44,7 +45,8 @@ node ${workspaceFolder}\\bin\\customObj2gltf.js convert --i='F:/obj/input' --o='
 ## how to use
 You must prepare python environment, and then run node.
 ### python
-- python version >= 3.8
+- Python >=3.7, <3.8
+    -  bpy 2.82.1 버전을 사용하고 있기 때문
 ```
 pip install -r requirements.txt
 ```
